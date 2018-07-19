@@ -1,0 +1,68 @@
+<title>{% block title %}Student portal PCCOE{% endblock %}</title>
+{% block content %}
+<h1>Student LOGIN</h1>
+
+    <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<table>
+<tr>
+
+    <th>Form ID</th>
+    <th>Start TIME</th>
+    <th>completion time</th>
+    <th>Name</th>
+    <th>Branch</th>
+    <th>Academic Year</th>
+    <th>Roll Number</th>
+    <th>Student ID</th>
+    <th>Attendance</th>
+    <th>UT Percentage</th>
+    <th>UT Fail Subjects</th>
+    <th>Perfomance Feedback</th>
+    <th>Extra Efforts</th>
+</tr>
+
+      <tr>
+        <td>{{ d.a }}</td>
+          <td>{{ d.b }}</td>
+          <td>{{ d.c }}</td>
+           <td>{{ d.d }}</td>
+          <td>{{ d.e }}</td>
+          <td>{{ d.f }}</td>
+          <td>{{ d.g }}</td>
+          <td>{{ d.h }}</td>
+          <td>{{ d.i }}</td>
+          <td>{{ d.j }}</td>
+          <td>{{ d.k }}</td>
+          <td>{{ d.l }}</td>
+          <td>{{ d.m }}</td>
+      </tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

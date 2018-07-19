@@ -1,0 +1,20 @@
+<title>{% block title %}Student portal PCCOE{% endblock %}</title>
+{% block content %}
+{% load static %}
+<center>
+      <h2>STUDENT LOGIN</h2>
+     <form class="form" method="post" action="{% url 'search' %}" >{% csrf_token %}
+          <br><input type="text" placeholder="Enter ERP NO." name="erp"><br>
+              <br><input type="text" placeholder="Enter Roll No" name="roll"><br>
+              <button type="Submit">Login</button></td>
+     </form>
+    <h2>TEACHER LOGIN</h2>
+    <form class="form" method="post" action="{% url 'teacher' %}" >{% csrf_token %}
+          <br><input type="text" placeholder="Enter Your Name" name="teach"><br>
+              <br><input type="password" placeholder="Password" name="passw"><br>
+              <button type="Submit">Login</button></td>
+     </form>
+
+
+
+{% endblock %}

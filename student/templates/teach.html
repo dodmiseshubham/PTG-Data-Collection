@@ -1,0 +1,69 @@
+<title>{% block title %}Student portal PCCOE{% endblock %}</title>
+{% block content %}
+
+<h1>TEACHER LOGIN PORTAL-PCCOE</h1>
+    <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<table>
+<tr>
+
+    <th>Form ID</th>
+    <th>Start TIME</th>
+    <th>completion time</th>
+    <th>Name</th>
+    <th>Branch</th>
+    <th>Academic Year</th>
+    <th>Roll Number</th>
+    <th>Student ID</th>
+    <th>Attendance</th>
+    <th>UT Percentage</th>
+    <th>UT Fail Subjects</th>
+    <th>Perfomance Feedback</th>
+    <th>Extra Efforts</th>
+</tr>
+      {% for i in a %}
+      <tr>
+        <td>{{ i.a }}</td>
+          <td>{{ i.b }}</td>
+          <td>{{ i.c }}</td>
+           <td>{{ i.d }}</td>
+          <td>{{ i.e }}</td>
+          <td>{{ i.f }}</td>
+          <td>{{ i.g }}</td>
+          <td>{{ i.h }}</td>
+          <td>{{ i.i }}</td>
+          <td>{{ i.j }}</td>
+          <td>{{ i.k }}</td>
+          <td>{{ i.l }}</td>
+          <td>{{ i.m }}</td>
+      </tr>
+      {% endfor %}
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
